@@ -12,31 +12,32 @@ public class Main {
         GolfClubs add = new GolfClubs();
 
 
-        System.out.print("Enter Golf Club Name: ");
-        String x = scanner.nextLine();
-        if (x.equalsIgnoreCase("Calloway")){
-            add.setBrand(x);}
-        if (x.equalsIgnoreCase("Mizuno")){
-            add.setBrand(x);
+        {
+            System.out.print("Enter Golf Club Name: ");
+            String x = scanner.nextLine();
+            if (x.equalsIgnoreCase("Calloway")) {
+                add.setBrand(x);
+            }
+            if (x.equalsIgnoreCase("Mizuno")) {
+                add.setBrand(x);
+            }
+            if (x.equalsIgnoreCase("Ping")) {
+                add.setBrand(x);
+            }
+            if (x.equalsIgnoreCase("TaylorMade")) {
+                add.setBrand(x);
+            }
+            if (x.equalsIgnoreCase("Titlest")) {
+                add.setBrand(x);
+            } else System.out.println("Item Cannot Be Added To Inventory");
         }
-        if (x.equalsIgnoreCase("Ping")){
-            add.setBrand(x);
-        }
-        if (x.equalsIgnoreCase("TaylorMade")) {
-            add.setBrand(x);
-        }
-        if (x.equalsIgnoreCase("Titlest")) {
-            add.setBrand(x);
-        }
-
-        else System.out.println("Item Cannot Be Added To Inventory");
 
         System.out.print("Enter the item price: ");
         String y = scanner.nextLine();
         System.out.print("Enter the quantity: ");
         int z = Integer.parseInt(scanner.nextLine());
 
-        glf.put(x, add);
+        //glf.put(x, add);
 
         return add;
     }
