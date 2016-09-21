@@ -1,3 +1,5 @@
+import sun.jvm.hotspot.debugger.posix.elf.ELFSectionHeader;
+
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -9,11 +11,25 @@ public class Main {
     static GolfClubs createItem(Scanner scanner, HashMap glf) {
         GolfClubs add = new GolfClubs();
 
+
         System.out.print("Enter Golf Club Name: ");
         String x = scanner.nextLine();
         if (x.equalsIgnoreCase("Calloway")){
+            add.setBrand(x);}
+        if (x.equalsIgnoreCase("Mizuno")){
             add.setBrand(x);
         }
+        if (x.equalsIgnoreCase("Ping")){
+            add.setBrand(x);
+        }
+        if (x.equalsIgnoreCase("TaylorMade")) {
+            add.setBrand(x);
+        }
+        if (x.equalsIgnoreCase("Titlest")) {
+            add.setBrand(x);
+        }
+
+        else System.out.println("Item Cannot Be Added To Inventory");
 
         System.out.print("Enter the item price: ");
         String y = scanner.nextLine();
