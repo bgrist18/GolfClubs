@@ -18,18 +18,23 @@ public class Main {
             if (x.equalsIgnoreCase("Calloway")) {
                 add.setBrand(x);
             }
-            if (x.equalsIgnoreCase("Mizuno")) {
+            else if (x.equalsIgnoreCase("Mizuno")) {
                 add.setBrand(x);
             }
-            if (x.equalsIgnoreCase("Ping")) {
+            else if (x.equalsIgnoreCase("Ping")) {
                 add.setBrand(x);
             }
-            if (x.equalsIgnoreCase("TaylorMade")) {
+            else if (x.equalsIgnoreCase("TaylorMade")) {
                 add.setBrand(x);
             }
-            if (x.equalsIgnoreCase("Titlest")) {
+            else if (x.equalsIgnoreCase("Titlest")) {
                 add.setBrand(x);
-            } else System.out.println("Item Cannot Be Added To Inventory");
+            } else {
+                System.out.println("Item Cannot Be Added To Inventory");
+                return null;
+            }
+
+
         }
 
         System.out.print("Enter the item price: ");
@@ -64,7 +69,10 @@ public class Main {
                 switch (option) {
                     case "1":
                         GolfClubs add = createItem(scanner, glf);
-                        glf.put(add.brand, add);
+                        if (add != null) {
+
+                            glf.put(add.brand, add);
+                        }
 //                        System.out.print("Enter Golf Club Name: ");
 //                        String x = scanner.nextLine();
 //                        System.out.print("Enter the item price: ");
