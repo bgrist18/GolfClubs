@@ -7,6 +7,5 @@ public class TaylorMade extends GolfClubs {
         this.price = price;
         this.quantity = quantity;
         this.brand = "TaylorMade";
-
     }
 }

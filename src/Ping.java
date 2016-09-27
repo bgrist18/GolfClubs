@@ -7,6 +7,5 @@ public class Ping extends GolfClubs {
         this.price = price;
         this.quantity = quantity;
         this.brand = "Ping";
-
     }
 }
